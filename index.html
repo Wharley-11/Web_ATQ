@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <title>ATQ</title>
+    <script src="_scripts/main.js"></script>
+    <link rel="stylesheet" href="/_static/_css/style.css" />
+  </head>
+
+  <body>
+    
+    <div class="mouse-shadow" id="shadow"></div>
+    <script>
+      const shadow = document.getElementById("shadow");
+      window.addEventListener("mousemove", (e) => {
+        const x = e.clientX;
+        const y = e.clientY;
+        shadow.style.setProperty("--x", `${x}px`);
+        shadow.style.setProperty("--y", `${y}px`);
+      });
+    </script>
+    <div id="interface">
+      <header id="cabecalho">
+        <nav id="menu">
+          <h1 id="cabecalho">Menu principal</h1>
+          <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/login">Login</a></li>
+            <li><a href="/create_account">Criar conta</a></li>
+            <li><a href="/loja">Loja</a></li>
+            <li><a href="/warnings">Avisos</a></li>
+            <li><a href="/perfil">Perfil</a></li>
+            <li><a href="/atq">ATQ</a></li>
+          </ul>
+        </nav>
+        <hgroup id="titulo_cabecalho">
+          <h1>ATQ</h1>
+          <h2>Página oficial da Atlética de Química</h2>
+        </hgroup>
+      </header>
+    </div>
+  </body>
+</html>
